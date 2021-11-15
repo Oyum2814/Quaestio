@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quaestio Game</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+
+    <div class="visual">
+        <img src="./tv_quest.png" id="tvques">
+        <video class="video_screen" controls>
+            <source
+                src="https://firebasestorage.googleapis.com/v0/b/baka-c202d.appspot.com/o/Cutscenes%2FBard%20of%20blood.mp4?alt=media&token=497d8b46-aef0-45b0-b30c-cc256fd77b22"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </div>
+
+    <div class="score">
+        Score : <span id="score"></span>
+        <h3 id="finished">YOU HAVE COMPLETED THE GAME. QUESTIONS MIGHT BEGIN TO REPEAT</h3>
+    </div>
+    <div id="message">
+    </div>
+    <div class="extra-buttons">
+        <img src="https://pluspng.com/img-png/restart-png-restart-icon-1600.png" class="restart" onclick=restart()>
+        <img src="https://cdn.onlinewebfonts.com/svg/img_447834.png" class="next" onclick=next_question()>
+    </div>
+
+    <div class="container">
+
+        <div class="content">
+            <div class="question" id="qs">
+                Loading....
+            </div>
+            <div class="options">
+                <div class="grid-item" id="opt_a">Loading...</div>
+                <div class="grid-item" id="opt_b">Loading...</div>
+                <div class="grid-item" id="opt_c">Loading...</div>
+                <div class="grid-item" id="opt_d">Loading...</div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

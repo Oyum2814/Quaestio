@@ -1,0 +1,195 @@
+body {
+  background: rgb(180, 58, 84);
+  background: linear-gradient(
+    90deg,
+    rgba(180, 58, 84, 1) 0%,
+    rgba(20, 19, 78, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 20%;
+  width: 90%;
+  height: 400px;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 16px;
+}
+.logo {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 35%;
+  left: 7%;
+}
+.tv-img {
+  width: 42%;
+  height: auto;
+  position: relative;
+}
+.play-icon {
+  position: absolute;
+  width: 6%;
+  height: auto;
+  left: 13%;
+  top: 57%;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px 0px;
+  border-radius: 50%;
+}
+.play-icon:hover {
+  transform: scale(1.1, 1.1);
+  filter: hue-rotate(180deg);
+  transition-duration: 0.3s;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+.facebook-icon,
+.instagram-icon,
+.twitter-icon {
+  position: relative;
+  width: 3rem;
+  height: auto;
+  box-shadow: 2px 2px 0px 0px;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  left: 20%;
+  margin: auto;
+}
+.facebook-icon:hover,
+.instagram-icon:hover,
+.twitter-icon:hover {
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  transition-duration: 0.2s;
+  border-radius: 50%;
+}
+.tv {
+  margin: auto;
+  position: relative;
+  left: 20%;
+  justify-content: center;
+}
+/* 
+.content,
+.visual {
+  border-color: bisque;
+  border-width: 1px;
+  border-style: solid;
+} */
+
+.content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.visual {
+  width: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tvques {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.options {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.grid-item {
+  background-color: rgb(255, 204, 0);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 2vmax;
+  text-align: center;
+  border-radius: 16px;
+  margin: 1.5rem;
+  overflow: auto;
+  max-height: 5rem;
+  max-width: 60%;
+}
+.grid-item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  cursor: pointer;
+}
+
+.question {
+  margin: auto;
+  text-align: center;
+  color: white;
+  font: size 2.3vmax;
+  background-color: rgba(249, 0, 137, 0.933);
+  border-radius: 23px;
+  width: 80%;
+  padding: 1.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(255, 204, 0);
+  overflow: auto;
+}
+
+.video_screen {
+  position: absolute;
+  left: 35%;
+  top: 1.8%;
+  width: 30%;
+  max-height: 15rem;
+}
+.score {
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  font-family: "Pacifico";
+  text-align: center;
+}
+.extra-buttons {
+  display: flex;
+}
+.next,
+.restart {
+  width: 4rem;
+  height: auto;
+  border-radius: 100%;
+  margin: 0.5rem;
+}
+
+.next:hover,
+.restart:hover {
+  background-color: rgb(255, 255, 0);
+  color: white;
+}
+
+#message {
+  font-size: 2em;
+  color: white;
+}
+
+#finished {
+  color: rgb(0, 255, 0);
+  font-size: 1.9vmax;
+  display: none;
+}
