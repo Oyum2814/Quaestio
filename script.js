@@ -220,7 +220,7 @@ function arrayRemove(arr, value) {
 }
 
 function new_question() {
-
+    
     rand_num=Math.floor(Math.random() * l);
     console.log(JsonQ.length);
     console.log(Question_json.questions.length);
@@ -231,6 +231,7 @@ function new_question() {
     document.querySelector('.question').innerHTML=JsonQ[rand_num].Question_obj.Question;
 
     document.querySelector('.video_screen').src=JsonQ[rand_num].Question_obj.link;
+    console.log(JsonQ[rand_num].Question_obj.link);
 
     optionA=document.querySelector('#opt_a');
     optionA.innerHTML=JsonQ[rand_num].Question_obj.options.a;
