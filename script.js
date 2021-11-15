@@ -197,6 +197,7 @@ const Question_json={
     
 }
 
+
 var JsonQ=[];
 JsonQ.push.apply(JsonQ, Question_json.questions);
 var score=0;
@@ -288,7 +289,10 @@ function checkAnswer(){
         message=document.getElementById('message')
         message.innerHTML = 'Wrong!';
         message.style.color='red';
-        JsonQ=Question_json.questions;
+        JsonQ=[];
+        JsonQ.push.apply(JsonQ, Question_json.questions);
+        l=JsonQ.length;
+        
       }
       else {
         console.log('something else');
