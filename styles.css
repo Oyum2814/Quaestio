@@ -137,7 +137,7 @@ body {
   background-color: rgb(255, 204, 0);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
-  font-size: 2vmax;
+  font-size: 1.7vmax;
   text-align: center;
   border-radius: 16px;
   margin: 1.5rem;
@@ -156,7 +156,7 @@ body {
   margin: auto;
   text-align: center;
   color: white;
-  font: size 2.3vmax;
+  font: size 2.4vmax;
   background-color: rgba(249, 0, 137, 0.933);
   border-radius: 23px;
   width: 80%;
