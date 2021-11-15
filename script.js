@@ -266,6 +266,7 @@ function checkAnswer(){
         message.innerHTML = 'Correct!';
         message.style.color='green';
 
+
         if(JsonQ.length==1)
         {
           document.getElementById('finished').style.display='block';
@@ -286,13 +287,20 @@ function checkAnswer(){
         score=0;
         document.getElementById('score').innerHTML =score;
         ev.target.style.backgroundColor='red';
-
         message=document.getElementById('message')
         message.innerHTML = 'Wrong!';
         message.style.color='red';
         JsonQ=[];
         JsonQ.push.apply(JsonQ, Question_json.questions);
         l=JsonQ.length;
+
+        optns=document.getElementsByClassName('grid-item');  
+        for(i=0;i<4;i++){
+          if(optns[i].innerHTML==JsonQ[rand_num].Question_obj.answer)
+          {
+            optns[i].style.backgroundColor='green';
+          }
+        }
         
       }
       else {
